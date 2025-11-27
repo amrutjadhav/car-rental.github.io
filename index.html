@@ -513,16 +513,16 @@
                     <h3>Send Enquiry</h3>
                     <form id="enquiryForm" action="https://formsubmit.co/iamrouteofl@gmail.com" method="POST" >
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" placeholder="Phone Number" required>
+                            <input type="tel" name="phone" placeholder="Phone Number" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Email Address" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
                         </div>
                         <div class="form-group">
-                            <select>
+                            <select name="service">
                                 <option value="" disabled selected>Select Service</option>
                                 <option value="airport">Airport Transfer</option>
                                 <option value="outstation">Outstation Cab</option>
@@ -532,7 +532,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                            <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Enquiry</button>
                     </form>
